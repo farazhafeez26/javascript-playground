@@ -5,16 +5,15 @@ if (readDocs) {
   alert("you will be a good programmer");
 }
 
-<script>
 
-  var name = "Faraz";
-  var fullName = name + " " + "hafeez";
-  var age = 33;
-  var isCoding = true;
-  var hobbies = ["Surfing internet", "Cooking", "coding"]
+var name = "Faraz";
+var fullName = name + " " + "hafeez";
+var age = 33;
+var isCoding = true;
+var hobbies = ["Surfing internet", "Cooking", "coding"]
 var programmer = {
-    hobbies,
-    name: "faraz hafeez",
+  hobbies,
+  name: "faraz hafeez",
   age: age,
   sayhi: function () {
     console.log(this.name);
@@ -30,5 +29,5 @@ function createPar(text) {
 }
 console.log(hobbies.length)
 for (var i = 0; i < hobbies.length; {
-    createPar(hobbies[i])
-  }
+  createPar(hobbies[i])
+}

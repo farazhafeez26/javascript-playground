@@ -6,40 +6,46 @@
 </head>
 
 <body>
+  <p id="demo"></p>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
   <script>
-
-    var name = "Faraz";
-    var fullName = name + " " + "hafeez";
-    var age = 33;
-    var isCoding = true;
-    var hobbies = ["Surfing internet", "Cooking", "coding"]
-    var programmer = {
-      hobbies,
-      name: "faraz hafeez",
-      age: age,
-      sayhi: function () {
-        console.log(this.name);
-        return this.age
-      }
-
-    };
-    programmer.sayhi()
-    function createPar(text) {
-      var p = document.createElement("P")
-      p.innerText = text
-      document.body.appendChild(p)
+    //javascript for loop 
+    var cars = ["BMW", "volvo", "saab", "ford"];
+    var i, len, text;
+    for (i = 1, len = cars.length, text = " "; i < len; i++) {
+      text += cars[i] + "<br>";
     }
+    document.getElementById("demo").innerHTML = text;
+    //end of script
 
-
-
-    for (var i = 0; i < hobbies.length; i++) {
-      createPar(hobbies[i])
+    //javascript for/in loop 
+    var txt = "";
+    var person = { fname: "john", lname: "Doe", age: 25 };
+    var x;
+    for (x in person) {
+      txt += person[x] + " ";
     }
+    document.getElementById("demo1").innerHTML = txt;
+    //end of script
+
+    //javascript while loop
+    var nos = ["1", "2", "3", "4", "5", "6"];
+    xxx = "";
+    lenx = nos.length;
+    var j;
+    for (j = 0; j < lenx; j++) {
+      xxx += "the lucky number is" + " " + nos[j] + "<br/>";
+    }
+    document.getElementById("demo2").innerHTML = xxx;
 
   </script>
 
+
+
   <h1>My First Heading</h1>
   <p>My first paragraph.</p>
+
 </body>
 
 </html>

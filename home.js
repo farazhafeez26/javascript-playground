@@ -52,16 +52,10 @@ form.addEventListener("submit", function (event) {
     showtodos()
 })
 
-function showfirstname() {
+function showfirstlastname() {
     var x = document.getElementById("mytext").value;
     var y = document.getElementById("mytext2").value;
     z = x + y;
     document.getElementById("output1").innerHTML = z;
 }
 
-function addnames() {
-    var x = document.getElementById("mytext").value;
-    document.getElementById("output1").innerHTML = x;
-
-
-}

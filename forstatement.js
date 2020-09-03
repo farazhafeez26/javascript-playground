@@ -1,6 +1,3 @@
-
-
-
 //javascript for loop 
 var cars = ["BMW", "volvo", "saab", "ford"];
 var i, len, text;
@@ -29,33 +26,3 @@ for (j = 0; j < lenx; j++) {
     xxx += "the lucky number is" + " " + nos[j] + "<br/>";
 }
 document.getElementById("demo2").innerHTML = xxx;
-
-
-var todos = []
-
-function showtodos() {
-
-    document.getElementById("todo-list").innerHTML = ""
-    for (var i = 0; i < todos.length; i++) {
-        var todo = document.createElement("P")
-        todo.innerText = todos[i]
-        document.getElementById("todo-list").appendChild(todo)
-    }
-
-
-}
-// 1 
-form.addEventListener("submit", function (event) {
-    event.preventDefault()
-    var todoText = document.getElementById("todo-item").value
-    todos.push(todoText)
-    showtodos()
-})
-
-function showfirstlastname() {
-    var x = document.getElementById("mytext").value;
-    var y = document.getElementById("mytext2").value;
-    z = x + y;
-    document.getElementById("output1").innerHTML = z;
-}
-

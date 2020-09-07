@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Todo List</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <title>My Page</title>
-</head>
+  <body>
+    <div class="container">
+      <h3>Add todos:</h3>
 
-<body>
+      <form id="form" class="form-group">
+        <label for="todo-item">Add To do</label>
+        <input
+          class="form-control"
+          type="text"
+          placeholder="Add a To Do"
+          id="todo-item"
+          name="todo-item"
+        />
+      </form>
+      <h3>Todo list:</h3>
+      <div id="todo-list" class="list-group"></div>
+    </div>
 
-  <form id="form">
-    <label for="todo-item">Add To do</label>
-    <input type="text" placeholder="Add a ToDo" id="todo-item" name="todo-item" />
-  </form>
-
-  <div id="todo-list"></div>
-
-
-  <script src="todolist.js"></script>
-
-
-</body>
-
+    <script src="todolist.js"></script>
+  </body>
 </html>

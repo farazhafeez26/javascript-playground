@@ -23,7 +23,10 @@ form.addEventListener("submit", function (event) {
 //store to-do list on local storage
 
 function storeTodos() {
+    //vvvto convert JS object into JSON string  vvv
     window.localStorage.setItem("todos", JSON.stringify(todos))
+    var idForTodos = todosId.getAttribute("todos")
+    console.log(idForTodos)
 }
 
 // check for stored to dos and display them to the user 
@@ -33,16 +36,17 @@ function main() {
     var localTodos = JSON.parse(window.localStorage.getItem("todos"))
     //if todos are not empty assign them todos array. 
     if (localTodos !== null) {
-        todos = localTodos
+        todos = localTodos    // question 
     }
     showtodos()
 }
 main()
 
 
+
 // homework - to assign an ID to each to-do item, use data attributes. 
 // please refer MDN dataattributes https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes 
-// i want to use data attri. to delete each to dos
+// i want to use data attri. to delete each to dos.
 // use splice method to delete element from array.  
 
 
